@@ -4,10 +4,10 @@ import Stream from './components/Stream';
 
 const tracks = [
 	{
-	  title: 'Some track'
+	  title: 'Some track here'
 	},
 	{
-	  title: 'Some other track'
+	  title: 'Some other track here'
 	}
 ];
 
