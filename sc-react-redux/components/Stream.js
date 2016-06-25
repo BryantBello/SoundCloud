@@ -8,7 +8,7 @@ function Stream({ tracks = [] }) {
           return <div className="track" key={key}>{track.title}</div>;
         })
       }
-    </div>
+    <div/>
   );
 }
 
