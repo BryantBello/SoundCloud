@@ -3,14 +3,15 @@ import { shallow } from 'enzyme';
 
 describe('Stream', () => {
 
-  const props = {
-    tracks: [{ title: 'x' }, { title: 'y' }],
-  };
+            const props = {
+                tracks: [{ title: 'x' }, { title: 'y' }],
+            };
 
-  it('shows two elements', () => {
-    const element = shallow(<Stream { ...props } />);
+            it('shows two elements', () => {
+                    const element = shallow( < Stream {...props }
+                        />);
 
-    expect(element.find('.track')).to.have.length(2);
-  });
+                        expect(element.find('.track')).to.have.length(2);
+                    });
 
-});
+            });

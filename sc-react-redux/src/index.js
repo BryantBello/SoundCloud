@@ -1,17 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import configureStore from './stores/configureStore';
+import * as actions from './actions';
 import Stream from './components/Stream';
 
 const tracks = [
-	{
-	  title: 'Some track here'
-	},
-	{
-	  title: 'Some other track here'
-	}
+  {
+    title: 'Some track'
+  },
+  {
+    title: 'Some other track'
+  }
 ];
 
+const store = configureStore();
+store.dispatch(actions.setTracks(tracks));
+
 ReactDOM.render(
-	<Stream tracks={tracks} />,
-	document.getElementById('app')
-	);
+  <Stream />,
+  document.getElementById('app')
+);
